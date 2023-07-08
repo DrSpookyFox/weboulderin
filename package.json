@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "name": "webouldern",
+  "description": "<img src=\"images/Screenshot 2023-06-17 at 6.24.48 PM.png\" alt=\"\" title=\"1st render\" style=\"display: inline-block; margin: 0 auto; max-width: 300px\"> <img src=\"images/Screenshot 2023-06-17 at 6.25.03 PM.png\" alt=\"\" title=\"1st render\" style=\"display: inline-block; margin: 0 auto; max-width: 300px\">",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "devstart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrSpookyFox/weboulderin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrSpookyFox/weboulderin/issues"
+  },
+  "homepage": "https://github.com/DrSpookyFox/weboulderin#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
