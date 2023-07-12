@@ -24,11 +24,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgWuTW3x3RMF6v9_-M8wG--vPuulivsCk&libraries=places&callback=initMap"
-    ></script>
-    <script src="./script.js" defer></script>
+    <script src="./preferences.js" defer></script>
     <link href="./style.css" rel="stylesheet" type="text/css" />
     <title>Preferences Page</title>
   </head>
@@ -62,32 +58,32 @@
           </ul>
         </div>
 
-        <form>
+        <form id="preferencesForm">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01"
                 >Min Grade</label
               >
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="minGrade">
               <option selected>Choose...</option>
-              <option value="1">V1</option>
-              <option value="2">V2</option>
-              <option value="3">V3</option>
-              <option value="4">V4</option>
-              <option value="5">V5</option>
-              <option value="6">V6</option>
-              <option value="7">V7</option>
-              <option value="8">V8</option>
-              <option value="9">V9</option>
-              <option value="10">V10</option>
-              <option value="11">V11</option>
-              <option value="12">V12</option>
-              <option value="13">V13</option>
-              <option value="14">V14</option>
-              <option value="15">V15</option>
-              <option value="16">V16</option>
-              <option value="17">V17</option>
+              <option value="V1">V1</option>
+              <option value="V2">V2</option>
+              <option value="V3">V3</option>
+              <option value="V4">V4</option>
+              <option value="V5">V5</option>
+              <option value="V6">V6</option>
+              <option value="V7">V7</option>
+              <option value="V8">V8</option>
+              <option value="V9">V9</option>
+              <option value="V10">V10</option>
+              <option value="V11">V11</option>
+              <option value="V12">V12</option>
+              <option value="V13">V13</option>
+              <option value="V14">V14</option>
+              <option value="V15">V15</option>
+              <option value="V16">V16</option>
+              <option value="V17">V17</option>
             </select>
           </div>
           <div class="input-group mb-3">
@@ -96,25 +92,25 @@
                 >Max Grade</label
               >
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="maxGrade">
               <option selected>Choose...</option>
-              <option value="1">V1</option>
-              <option value="2">V2</option>
-              <option value="3">V3</option>
-              <option value="4">V4</option>
-              <option value="5">V5</option>
-              <option value="6">V6</option>
-              <option value="7">V7</option>
-              <option value="8">V8</option>
-              <option value="9">V9</option>
-              <option value="10">V10</option>
-              <option value="11">V11</option>
-              <option value="12">V12</option>
-              <option value="13">V13</option>
-              <option value="14">V14</option>
-              <option value="15">V15</option>
-              <option value="16">V16</option>
-              <option value="17">V17</option>
+              <option value="V1">V1</option>
+              <option value="V2">V2</option>
+              <option value="V3">V3</option>
+              <option value="V4">V4</option>
+              <option value="V5">V5</option>
+              <option value="V6">V6</option>
+              <option value="V7">V7</option>
+              <option value="V8">V8</option>
+              <option value="V9">V9</option>
+              <option value="V10">V10</option>
+              <option value="V11">V11</option>
+              <option value="V12">V12</option>
+              <option value="V13">V13</option>
+              <option value="V14">V14</option>
+              <option value="V15">V15</option>
+              <option value="V16">V16</option>
+              <option value="V17">V17</option>
             </select>
           </div>
           <div class="input-group mb-3">
@@ -123,7 +119,7 @@
                 >Number of Crashpads</label
               >
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="crashPads">
               <option selected>Choose...</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -141,7 +137,7 @@
                 >Number of Spotters</label
               >
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="spotters">
               <option selected>Choose...</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -159,16 +155,19 @@
                 >Highest and lowest tolerable temp (°F)
               </span>
             </div>
-            <input type="text" class="form-control" />
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" id="minTemp"/>
+            <input type="text" class="form-control" id="maxTemp"/>
           </div>
-          <button type="button submit" class="btn btn-primary btn-lg btn-block">
+          <button type="button submit" id = "preferencesSubmit" class="btn btn-primary btn-lg btn-block">
             Submit
           </button>
         </form>
 
         <footer>
-          <p>Made by Alexander Singer github: drspookyfox</p>
+          <p>
+            Made by Alexander Singer github:
+            <a href="https://github.com/DrSpookyFox"> drspookyfox</a>
+          </p>
         </footer>
       </div>
     </div>
