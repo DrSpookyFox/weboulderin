@@ -12,8 +12,6 @@ window.onload = (e) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      document.getElementById("gunksCurrentWeather").innerHTML = data.temp;
     });
 };
-
-
