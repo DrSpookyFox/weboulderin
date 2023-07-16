@@ -29,6 +29,7 @@
     <title>Preferences Page</title>
   </head>
   <body>
+    <!-- switch all inputs to ranges! https://getbootstrap.com/docs/5.0/forms/range/-->
     <div class="container">
       <div class="row">
         <div class="col-9">
@@ -155,10 +156,14 @@
                 >Highest and lowest tolerable temp (°F)
               </span>
             </div>
-            <input type="text" class="form-control" id="minTemp"/>
-            <input type="text" class="form-control" id="maxTemp"/>
+            <input type="text" class="form-control" id="minTemp" />
+            <input type="text" class="form-control" id="maxTemp" />
           </div>
-          <button type="button submit" id = "preferencesSubmit" class="btn btn-primary btn-lg btn-block">
+          <button
+            type="button submit"
+            id="preferencesSubmit"
+            class="btn btn-primary btn-lg btn-block"
+          >
             Submit
           </button>
         </form>

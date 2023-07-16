@@ -25,6 +25,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="gunks.js" defer></script>
     <script src="./script.js" defer></script>
     <link href="./style.css" rel="stylesheet" type="text/css" />
     <title>We Boulder'n</title>
@@ -62,11 +63,30 @@
           <nav class="nav flex-column">
             <ul>
               <li>Preferences</li>
-              <li>Grade Range: V5-V6</li>
-              <li>Number of crashpads: 3</li>
-              <li>Number of spotters: 1</li>
-              <li>Coldest tolerable temp: 40°F</li>
-              <li>Hottest tolerable temp: 75°F</li>
+              <li>
+                Grade Range:
+                <div id="userMinGradeRange"></div>
+                -
+                <div id="userMaxGradeRange"></div>
+              </li>
+              <li>
+                Number of crashpads:
+                <div id="userCrashPads"></div>
+              </li>
+              <li>
+                Number of spotters:
+                <div id="userSpotters"></div>
+              </li>
+              <li>
+                Coldest tolerable temp:
+                <div id="userColdTemp"></div>
+                °F
+              </li>
+              <li>
+                Hottest tolerable temp:
+                <div id="userHotTemp"></div>
+                °F
+              </li>
             </ul>
           </nav>
         </div>
